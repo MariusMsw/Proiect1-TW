@@ -138,13 +138,17 @@
 }
 
 footer {
-    height: 11.4vh;
+    height: 7vh;
     background-color: black;
     color: #5cdb95;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
 }
 
 .fab {

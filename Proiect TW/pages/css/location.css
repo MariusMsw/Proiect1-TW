@@ -1,17 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#location-title {
+    text-align: center;
 }
 
-#section-2 {
-  margin-top: 20px;
-  color: #000;
-  font-size: 16px;
-  line-height: 24px;
+#description {
+    font-size: 1.4em;
+    text-align: center;
 }
 
 #image {
-  background-size: cover;
-  transform: translate(35%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #description {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    #image {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    height: 7vh;
+    background-color: black;
+    color: #5cdb95;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab {
+    margin: 0 16px;
+    color: white;
 }
