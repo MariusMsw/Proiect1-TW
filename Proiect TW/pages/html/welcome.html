@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="icon" href="../../assets/images/earth-favicon.png" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/welcome.css">
+    <script src="../js/navbar.js"></script>
+    <script src="../js/welcome.js"></script>
+    <title>Piccolo Residence</title>
+</head>
+
+<body>
+
+    <!-- Section 1 - Navigation bar-->
+    <div class="hidden-xs">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="../../assets/images/earth-favicon.png" alt="Logo" class="logo">
+                <p class="text title-piccolo">Picollo Residence</p>
+            </div>
+            <ul class="navbar-items">
+                <li><a class="text navbar-item" href="welcome.html">WELCOME</a></li>
+                <li><a class="text navbar-item" href="location.html">LOCATION</a></li>
+                <li><a class="text navbar-item" href="#">GALLERY</a></li>
+                <li><a class="text navbar-item" href="#">REVIEWS</a></li>
+                <li><a class="text navbar-item" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="display-xs">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="../../assets/images/earth-favicon.png" alt="Logo" class="logo">
+                <p class="text title-piccolo">Picollo Residence</p>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="text" href="welcome.html">WELCOME</a>
+                    <a class="text" href="location.html">LOCATION</a>
+                    <a class="text" href="#">GALLERY</a>
+                    <a class="text" href="#">REVIEWS</a>
+                    <a class="text" href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 1 - Done -->
+
+    <!-- Section 2 - Title and Video Presentation -->
+    <div class="container">
+        <div class="container-video">
+            <video autoplay loop="" id="video">
+                <source src="../../assets/videos/presentation-video-1.webm">
+            </video>
+            <div class="centered">
+                <h2 class="text text-on-image">Piccolo Residence</h2>
+                <h3 class="text text-on-image smaller"> Your dream home is closer than you expect!</h3>
+            </div>
+        </div>
+        <div>
+            <audio loop autoplay controls id="player">
+                <source src="../../assets/audio/muzica.mp3" type="audio/mp3">
+                Sound is not supported.
+            </audio>
+        </div>
+
+        <!--  Section 3 - Apartments -->
+        <div id="section-3">
+            <h1 id="apartaments-title">APARTMENTS</h1>
+            <h2 id="apartaments-description">
+                Piccolo Residence offers apartments of one, two and three rooms, respectively, with a warm and welcoming atmosphere, where the natural light feels like home. Each space is efficiently subdivided, offering the residents various possibilities of arrangement
+                and use, adapted to a modern lifestyle.</h2>
+            <h1 id="summary">Summary description of apartments:</h1>
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'One_room')">One room</button>
+                <button class="tablinks" onclick="openCity(event, 'Two_rooms')">Two rooms</button>
+                <button class="tablinks" onclick="openCity(event, 'Three_rooms')">Three rooms</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="One_room" class="tabcontent">
+                <h3>One room</h3>
+                <img src="../../assets/images/1-camera.jpeg" alt="One room image">
+            </div>
+
+            <div id="Two_rooms" class="tabcontent">
+                <h3>Two rooms</h3>
+                <img src="../../assets/images/two-rooms.jpg" alt="Two rooms image">
+            </div>
+
+            <div id="Three_rooms" class="tabcontent">
+                <h3>Three rooms</h3>
+                <img src="../../assets/images/three-rooms.jpeg" alt="Three rooms image">
+            </div>
+        </div>
+        <img id="couple-in-house" src="../../assets/images/couple-in-new-house.jpg" alt="Couple in new house">
+    </div>
+
+    <footer>
+        <h4>Find us on social media:</h4>
+        <a href="https://www.facebook.com/mihai.marius.505"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-lg"></i></a>
+        <script src="https://kit.fontawesome.com/383a9f8099.js" crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>
