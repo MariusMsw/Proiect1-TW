@@ -1,3 +1,15 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
+
 #location-title {
     text-align: center;
 }
@@ -11,24 +23,40 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    width: 50%;
+    width: 1024px;
+    height: 77vh;
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width:736px) {
     #description {
         font-size: 0.9em;
         text-align: center;
     }
     #image {
-        width: auto;
+        width: 720px;
+        height: 720px;
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
+    }
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 7vh;
+        bottom: 0;
+        background-color: black;
+        color: #5cdb95;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 footer {
+    position: absolute;
+    width: 100%;
     height: 7vh;
+    bottom: 0;
     background-color: black;
     color: #5cdb95;
     display: flex;

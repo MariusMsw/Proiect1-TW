@@ -41,22 +41,15 @@
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
-    /* margin-right: 20px; */
     margin-bottom: 20px;
-    font-size: 2.3em;
+    font-size: 1.3em;
 }
-
-
-/* Style the tab */
 
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
-
-/* Style the buttons that are used to open the tab content */
 
 .tab button {
     background-color: inherit;
@@ -69,22 +62,13 @@
     color: black;
 }
 
-
-/* Change background color of buttons on hover */
-
 .tab button:hover {
     background-color: #ddd;
 }
 
-
-/* Create an active/current tablink class */
-
 .tab button.active {
     background-color: #ccc;
 }
-
-
-/* Style the tab content */
 
 .tabcontent {
     display: none;
@@ -108,11 +92,7 @@
 
 .tabcontent {
     animation: fadeEffect 2s;
-    /* Fading effect takes 1 second */
 }
-
-
-/* Go from zero to full opacity */
 
 @keyframes fadeEffect {
     from {
@@ -133,8 +113,10 @@
     height: auto;
 }
 
-#couple-in-house {
+iframe {
+    height: auto;
     width: 100%;
+    border: none;
 }
 
 footer {
