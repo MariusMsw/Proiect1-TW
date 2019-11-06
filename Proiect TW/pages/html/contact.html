@@ -10,12 +10,15 @@
     <link rel="icon" href="../../assets/images/earth-favicon.png" sizes="16x16" type="image/png" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <script src="../js/contact.js"></script>
     <script src="../js/navbar.js"></script>
+
     <title>Piccolo Residence</title>
 </head>
 
 <body>
+
     <!-- Section 1 - Navigation bar-->
     <div class="hidden-xs">
         <div class="navbar">
@@ -54,15 +57,27 @@
     </div>
     <!-- Section 1 - Done -->
 
-    <div class="grid-container">
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-1.png" alt="First photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-2.png" alt="Second photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-3.png" alt="Third photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-4.png" alt="Fourth photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-5.png" alt="Fifth photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-6.png" alt="Sixt photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-7.png" alt="Seventh photo"></div>
-        <div class="grid-item"><img src="../../assets/images/poza-galerie-8.png" alt="Eighth photo"></div>
+    <div class="container">
+        <form>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="australia">Romania</option>
+            <option value="canada">Belgium</option>
+            <option value="usa">USA</option>
+          </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+            <input id="submitBtn" type="submit" value="Submit" onclick="clickSubmit()">
+
+        </form>
     </div>
 
     <footer>
@@ -71,8 +86,9 @@
         <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-lg"></i></a>
         <script src="https://kit.fontawesome.com/383a9f8099.js" crossorigin="anonymous"></script>
     </footer>
-
-
 </body>
+
+<h1>Thank you for your message! PiccoloResidence Team &#174;
+</h1>
 
 </html>
