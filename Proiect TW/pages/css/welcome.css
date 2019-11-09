@@ -113,12 +113,6 @@
     height: auto;
 }
 
-iframe {
-    height: auto;
-    width: 100%;
-    border: none;
-}
-
 footer {
     height: 7vh;
     background-color: black;
