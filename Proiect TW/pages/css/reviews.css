@@ -173,3 +173,8 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.fab {
+    margin: 0 16px;
+    color: white;
+}
