@@ -1,1 +1,13 @@
-[{"name": "name1", "email": "email1", "age": "age1", "selectu": "selectu1", "gender": "gender1", "password": "password1"}]
+{
+    "users":
+  [
+      {
+        "name": "name1",
+       "email": "email1",
+       "age": "age1",
+       "selectu": "selectu1",
+       "gender": "gender1",
+       "password": "password1"
+      }
+    ]
+}
