@@ -7,4 +7,5 @@
     x.style.display = "block";
     x.style.opacity = "1";
   }
-} 
+}
+

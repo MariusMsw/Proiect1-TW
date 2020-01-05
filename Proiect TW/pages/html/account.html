@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
         <link rel="stylesheet" type="text/css" href="../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../css/welcome.css">
+        <link rel="stylesheet" type="text/css" href="../css/account.css">
+
         <title>Piccolo Residence</title>
     </head>
 
@@ -55,46 +57,63 @@
 
         <!-- Section 2 - Title and Video Presentation -->
         <div class="container">
-            <div class="container-video">
-                <video autoplay loop="" id="video" muted></video>
-                <div class="centered">
-                    <h2 class="text text-on-image">Piccolo Residence</h2>
-                    <h3 class="text text-on-image smaller"> Your dream home is closer than you expect!</h3>
+            <div class="container-fit">
+                <span id="message"></span>
+                <div class="form-content" id="logout">
+                    <div id="logoutButton"></div>
                 </div>
-            </div>
-            <div>
-                <audio loop="" autoplay controls id="player"></audio>
-            </div>
-
-            <!--  Section 3 - Apartments -->
-            <div id="section-3">
-                <h1 id="apartaments-title">APARTMENTS</h1>
-                <h6 id="apartaments-description">
-                    Piccolo Residence offers apartments of one, two and three rooms, respectively, with a warm and welcoming atmosphere, where the natural light feels like home. Each space is efficiently subdivided, offering the residents various possibilities of arrangement
-                    and use, adapted to a modern lifestyle.</h6>
-                <h1 id="summary">Summary description of apartments:</h1>
-
-                <!-- Tab links -->
-                <div class="tab">
-                    <button class="tablinks active" onclick="openBlueprint(event, 'One_room')">One room</button>
-                    <button class="tablinks" onclick="openBlueprint(event, 'Two_rooms')">Two rooms</button>
-                    <button class="tablinks" onclick="openBlueprint(event, 'Three_rooms')">Three rooms</button>
+                <div class="form-content" id="register">
+                    <h1>Register</h1>
+                    <div class="row">
+                        <div class="row-title">Name</div>
+                        <div class="row-field" id="register_name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Email</div>
+                        <div class="row-field" id="register_email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Age</div>
+                        <div class="row-field" id="register_age"></div>
+                        <span id="ageValue">18</span>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Gender</div>
+                        <div class="row-field" id="register_gender"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">I'm a</div>
+                        <select name="action">
+                            <option value="volvo">Tenant</option>
+                            <option value="saab">Buyer</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Password</div>
+                        <div class="row-field" id="register_password"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Confirm password</div>
+                        <div class="row-field" id="register_confirmPassword"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-field" id="register_terms"></div>
+                    </div>
+                    <span class="link" onclick="goToLogin()">I already have an account</span><br><br>
+                    <div id="registerButton"></div>
                 </div>
-
-                <!-- Tab content -->
-                <div id="One_room" class="tabcontent">
-                    <h3>One room</h3>
-                    <img src="../../assets/images/1-camera.jpeg" alt="One room image">
-                </div>
-
-                <div id="Two_rooms" class="tabcontent">
-                    <h3>Two rooms</h3>
-                    <img src="../../assets/images/two-rooms.jpg" alt="Two rooms image">
-                </div>
-
-                <div id="Three_rooms" class="tabcontent">
-                    <h3>Three rooms</h3>
-                    <img src="../../assets/images/three-rooms.jpeg" alt="Three rooms image">
+                <div class="form-content" id="login" style="display: none">
+                    <h1>Login</h1>
+                    <div class="row">
+                        <div class="row-title">Email</div>
+                        <div class="row-field" id="login_email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Password</div>
+                        <div class="row-field" id="login_password"></div>
+                    </div>
+                    <span class="link" onclick="goToRegister()">I don't have an account</span><br><br>
+                    <div id="loginButton"></div>
                 </div>
             </div>
         </div>
@@ -106,7 +125,7 @@
             <script src="https://kit.fontawesome.com/383a9f8099.js" crossorigin="anonymous"></script>
         </footer>
 
-        <script src="../js/welcome.js"></script>
+        <script src="../js/account.js"></script>
         <script src="../js/navbar.js"></script>
     </body>
 </html>

@@ -1,0 +1,58 @@
+#message {
+    text-align: center;
+    display: block;
+}
+
+.container-fit {
+    background-color: white;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+
+}
+
+.form-content {
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    margin: 0 65px;
+    line-height: 2.2;
+}
+
+.row-title {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.row-field {
+    padding: 5px;
+}
+
+.row-field > input {
+    padding: 0px 5px;
+    line-height: 2.2;
+    text-align: left;
+}
+
+.account-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.link {
+    cursor: pointer;
+    color: #2196F3;
+}
+
+body {
+    background-color: #ececec;
+}
+
+footer {
+	position: absolute;
+}
